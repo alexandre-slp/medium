@@ -1,4 +1,4 @@
-# Image name: gcr.io/your-project/composer-dags-sync
+# Image name: gcr.io/your-project-id/composer-dags-sync
 FROM gcr.io/google.com/cloudsdktool/cloud-sdk:alpine
 
 RUN apk add --update build-base libffi-dev openssl-dev python3-dev py3-pip
