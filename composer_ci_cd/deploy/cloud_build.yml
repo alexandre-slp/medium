@@ -2,7 +2,7 @@ steps:
   - id: Composer CI/CD
     name: ${_IMAGE_NAME}
     entrypoint: 'python3'
-    args: ['cloudbuild.py', ${_BUCKET_NAME}, ${_LAST_COMMIT_SHA_FILE_NAME}, ${_NEED_SYNC_FOLDERS}]
+    args: ['sync_composer.py', ${_BUCKET_NAME}, ${_LAST_COMMIT_SHA_FILE_NAME}, ${_NEED_SYNC_FOLDERS}]
 
 substitutions:
   _IMAGE_NAME: gcr.io/${PROJECT_ID}/${REPO_NAME}
