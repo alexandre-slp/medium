@@ -1,0 +1,11 @@
+steps:
+  - id: Composer CI/CD
+    name: ${_IMAGE_NAME}
+    entrypoint: 'python3'
+    args: ['cloudbuild.py', ${_BUCKET_NAME}, ${_LAST_COMMIT_SHA_FILE_NAME}, ${_NEED_SYNC_FOLDERS}]
+
+substitutions:
+  _IMAGE_NAME: gcr.io/${PROJECT_ID}/${REPO_NAME}
+  _BUCKET_NAME: -b your-bucket-name
+  _LAST_COMMIT_SHA_FILE_NAME: -s last_commit_sha_dont_delete.txt
+  _NEED_SYNC_FOLDERS: -f dags

@@ -1,6 +1,6 @@
 # Medium
-### All code used in my medium posts
+### All code used in my medium posts.
 
-### My Medium page: [@alexandre_slp][medium]
+### My Medium page: [@alexandre-slp][medium]
 
-[medium]: https://medium.com/@alexandre_slp
+[medium]: https://alexandre-slp.medium.com/
